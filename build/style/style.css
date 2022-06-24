@@ -1,0 +1,131 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+ul,
+li,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffae00;
+  transition: 0.75s;
+  -webkit-transition: 0.75s;
+  -moz-transition: 0.75s;
+  -ms-transition: 0.75s;
+  -o-transition: 0.75s;
+}
+a:hover {
+  color: red;
+}
+
+header {
+  grid-area: header;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  width: 98%;
+}
+header nav > h2 {
+  cursor: pointer;
+}
+header nav > h2:hover {
+  transform: scale(120%);
+  transition: all 0.75s;
+  -webkit-transform: scale(120%);
+  -moz-transform: scale(120%);
+  -ms-transform: scale(120%);
+  -o-transform: scale(120%);
+  -webkit-transition: all 0.75s;
+  -moz-transition: all 0.75s;
+  -ms-transition: all 0.75s;
+  -o-transition: all 0.75s;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+header nav ul a {
+  display: block;
+  padding: 10px;
+}
+header nav ul a:hover {
+  background-color: #ffae00;
+  transform: scale(120%);
+  -webkit-transform: scale(120%);
+  -moz-transform: scale(120%);
+  -ms-transform: scale(120%);
+  -o-transform: scale(120%);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  grid-area: sidebar;
+  background-color: aqua;
+  align-items: center;
+  padding: 10px;
+}
+.sidebar > p {
+  font-size: 11px;
+}
+.sidebar > ul {
+  list-style-type: none;
+}
+.sidebar > ul > li {
+  display: block;
+  padding: 5px;
+}
+.sidebar > ul > li:hover {
+  background-color: #ffae00;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: "header header header header header" "sidebar sidebar main main main" "sidebar sidebar footer footer footer";
+  gap: 10px;
+}
+
+.sticky {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 5px 5px 5px rgba(42, 55, 68, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

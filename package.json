@@ -1,0 +1,9 @@
+{
+  "name": "Playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "sass": "sass --watch ./src/style/style.scss ./build/style/style.css"
+  }
+}
